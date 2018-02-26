@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Николай Иванов](https://up.htmlacademy.ru/htmlcss/20/user/643685).
-* Наставник: [Сергей Зверобоев].
+* Наставник: [Сергей Зверобоев](https://htmlacademy.ru/profile/zveroboev).
 
 ---
 
