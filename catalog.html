@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия "Нёрдс"</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="header-logo" href="index.html">
+        <img src="img/logo.svg" width="200" height="200" alt="Логотип дизайн-студии Nerds">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li><a href="bascket.html">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog-container">
+
+    <h1 class="visually-hidden">Магазин студии Nerds</h1>
+
+    <div class="catalog-caption">
+      <h2>Магазин готовых шаблонов</h2>
+    </div>
+
+    <form action="/echo" method="post">
+      <!--форма-->
+      <button type="submit" class="show-button">Показать</button>
+    </form>
+
+    <section class="catalog-products">
+      <h2 class="visually-hidden">Карточки товаров</h2>
+
+      <b>Сортировать:</b>
+      <ul class="sort-list">
+        <li><span class="button-sort">по цене</span></li>
+        <li><span class="button-sort">по типу</span></li>
+        <li><span class="button-sort">по названию</span></li>
+      </ul>
+      <ul class="display-order">
+        <li>
+          <span class="button-order">
+            <img src="img/sort-down.svg" alt="По убыванию">
+          </span>
+        </li>
+        <li>
+          <span class="button-order">
+            <img src="img/sort-up.svg" alt="По возрастанию">
+          </span>
+        </li>
+      </ul>
+
+      <ul class="product-cards-list">
+        <li class="product-cards-item">
+          <img class="card-img" src="img/sedona-card.svg" alt="">
+          <div class="coast-info">
+            <b>Sedona</b>
+            <p>Информационный сайт для туристов</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="product-cards-item">
+          <img class="card-img" src="img/pink-card.svg" alt="">
+          <div class="coast-info">
+            <b>Pink app</b>
+            <p>Продуктивный лендинг приложения для iOS и Android</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="product-cards-item">
+          <img class="card-img" src="img/barbershop-card.svg" alt="">
+          <div class="coast-info">
+            <b>Barbershop</b>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="product-cards-item">
+          <img class="card-img" src="img/mishka-card.svg" alt="">
+          <div class="coast-info">
+            <b>Mishka</b>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="product-cards-item">
+          <img class="card-img" src="img/a-plus-card.svg" alt="">
+          <div class="coast-info">
+            <b>A plus</b>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+        <li class="product-cards-item">
+          <img class="card-img" src="img/kvast-card.svg" alt="">
+          <div class="coast-info">
+            <b>Кваст</b>
+            <p>Промо-сайт производителя крафтавого кваса</p>
+            <a class="button-coast" href="#">9900 руб.</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="page-menu">
+      <ul class="page-list">
+        <li><span class="button-page-item">1</span></li>
+        <li><span class="button-page-item">2</span></li>
+        <li><span class="button-page-item">3</span></li>
+        <li><span class="button-page-item">Следующая</span></li>
+      </ul>
+    </div>
+
+  </main>
+
+  <footer class="main-footer">
+
+    <section class="adress">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <img class="map" src="img/map.svg" alt="Карта">
+      <img class="marker" src="img/marker.svg" alt="Маркер">
+
+      <div class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <h3>Nerds design studio</h3>
+        <p class="contacts">
+          191186, Санкт-Петербург,<br>
+          ул. Б. Коншенная, д. 19/8
+        </p>
+        <p class="contact-number">
+          +7 (812) 275-75-75
+        </p>
+        <a class="writeus-button" href="writeus.html">Напишите нам</a>
+      </div>
+    </section>
+
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Вконтакте</a></li>
+        <li><a class="social-button" href="#">Фэйсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+      </ul>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
