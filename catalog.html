@@ -35,89 +35,87 @@
       <button type="submit" class="show-button">Показать</button>
     </form>
 
-    <section class="catalog-products">
-      <h2 class="visually-hidden">Карточки товаров</h2>
+    <div class="catalog-products-field">
 
-      <b>Сортировать:</b>
-      <ul class="sort-list">
-        <li><span class="button-sort">по цене</span></li>
-        <li><span class="button-sort">по типу</span></li>
-        <li><span class="button-sort">по названию</span></li>
-      </ul>
-      <ul class="display-order">
-        <li>
-          <span class="button-order">
-            <img src="img/sort-down.svg" alt="По убыванию">
-          </span>
-        </li>
-        <li>
-          <span class="button-order">
-            <img src="img/sort-up.svg" alt="По возрастанию">
-          </span>
-        </li>
-      </ul>
+      <div class="sort-field">
+        <b>Сортировать:</b>
+        <ul class="sort-list">
+          <li><button type="button" class="button-sort-active">по цене</button></li>
+          <li><button type="button" class="button-sort">по типу</button></li>
+          <li><button type="button" class="button-sort">по названию</button></li>
+          <li>
+            <button type="button" class="button-sort-active">
+              <img src="img/sort-down.svg" alt="По убыванию">
+            </button>
+          </li>
+          <li>
+            <button type="button" class="button-sort">
+              <img src="img/sort-up.svg" alt="По возрастанию">
+            </button>
+          </li>
+        </ul>
+      </div>
 
-      <ul class="product-cards-list">
-        <li class="product-cards-item">
-          <img class="card-img" src="img/sedona-card.svg" alt="">
-          <div class="coast-info">
-            <b>Sedona</b>
-            <p>Информационный сайт для туристов</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-        <li class="product-cards-item">
-          <img class="card-img" src="img/pink-card.svg" alt="">
-          <div class="coast-info">
-            <b>Pink app</b>
-            <p>Продуктивный лендинг приложения для iOS и Android</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-        <li class="product-cards-item">
-          <img class="card-img" src="img/barbershop-card.svg" alt="">
-          <div class="coast-info">
-            <b>Barbershop</b>
-            <p>Сайт салоны красоты. Для мужчин, да.</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-        <li class="product-cards-item">
-          <img class="card-img" src="img/mishka-card.svg" alt="">
-          <div class="coast-info">
-            <b>Mishka</b>
-            <p>Интернет-магазин вязаных игрушек</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-        <li class="product-cards-item">
-          <img class="card-img" src="img/a-plus-card.svg" alt="">
-          <div class="coast-info">
-            <b>A plus</b>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-        <li class="product-cards-item">
-          <img class="card-img" src="img/kvast-card.svg" alt="">
-          <div class="coast-info">
-            <b>Кваст</b>
-            <p>Промо-сайт производителя крафтавого кваса</p>
-            <a class="button-coast" href="#">9900 руб.</a>
-          </div>
-        </li>
-      </ul>
-    </section>
+      <div class="product-cards-field">
+        <ul class="product-cards-list">
+          <li class="product-cards-item">
+            <img class="card-img" src="img/sedona-card.svg" alt="">
+            <div class="coast-info">
+              <b>Sedona</b>
+              <p>Информационный сайт для туристов</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/pink-card.svg" alt="">
+            <div class="coast-info">
+              <b>Pink app</b>
+              <p>Продуктивный лендинг приложения для iOS и Android</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/barbershop-card.svg" alt="">
+            <div class="coast-info">
+              <b>Barbershop</b>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/mishka-card.svg" alt="">
+            <div class="coast-info">
+              <b>Mishka</b>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/a-plus-card.svg" alt="">
+            <div class="coast-info">
+              <b>A plus</b>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/kvast-card.svg" alt="">
+            <div class="coast-info">
+              <b>Кваст</b>
+              <p>Промо-сайт производителя крафтавого кваса</p>
+              <a class="button-coast" href="#">9900 руб.</a>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <div class="page-menu">
-      <ul class="page-list">
-        <li><span class="button-page-item">1</span></li>
-        <li><span class="button-page-item">2</span></li>
-        <li><span class="button-page-item">3</span></li>
-        <li><span class="button-page-item">Следующая</span></li>
-      </ul>
+      <div class="page-menu">
+        <button type="button" class="button-page-item">1</button>
+        <button type="button" class="button-page-item">2</button>
+        <button type="button" class="button-page-item">3</button>
+        <button type="button" class="button-page-item">Следующая</button>
+      </div>
     </div>
-
   </main>
 
   <footer class="main-footer">
