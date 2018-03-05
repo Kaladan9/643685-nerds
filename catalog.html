@@ -31,9 +31,55 @@
     </div>
 
     <form action="/echo" method="post">
-      <!--форма-->
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <div>
+          <input type="range" name="cost" id="cost" min="0" max="15000" step="100" value="10000">
+        </div>
+        <div>
+          <label for="min">от</label>
+          <output name="min" id="min">0</output>
+        </div>
+        <div>
+          <label for="max">до</label>
+          <output name="max" id="min">15000</output>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Сетка:</legend>
+        <label for="adapt">
+          <input type="radio" name="grid" id="adapt" value="adapt"  checked>
+          Адаптивная
+        </label>
+        <label for="fix">
+          <input type="radio" name="grid" id="fix" value="fix">
+          Фиксированная
+        </label>
+        <label for="rub">
+          <input type="radio" name="grid" id="rub" value="rub">
+          Резиновая
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Особенности:</legend>
+        <input type="checkbox" name="slider" id="slider" checked>
+        <label for="slider">Слайдер</label>
+        <input type="checkbox" name="adv-field" id="adv-field">
+        <label for="adv-field">Блок преимуществ</label>
+        <input type="checkbox" name="news" id="news" checked>
+        <label for="news">Новости</label>
+        <input type="checkbox" name="gallery" id="gallery">
+        <label for="gallery">Галерея</label>
+        <input type="checkbox" name="bask" id="bask">
+        <label for="bask">Корзина</label>
+      </fieldset>
+
       <button type="submit" class="show-button">Показать</button>
     </form>
+
+
 
     <div class="catalog-products-field">
 
