@@ -50,9 +50,15 @@
         </li>
       </ul>
       <div class="slider-switch-panel">
-        <button type="button" class="button-slide-active" aria-label="Слайд #1"></button>
-        <button type="button" class="button-slide" aria-label="Слайд #2"></button>
-        <button type="button" class="button-slide" aria-label="Слайд #3"></button>
+        <button type="button" class="button-slide-active" aria-label="Слайд #1">
+          <span class="visually-hidden">Слайд №1</span>
+        </button>
+        <button type="button" class="button-slide" aria-label="Слайд #2">
+          <span class="visually-hidden">Слайд №3</span>
+        </button>
+        <button type="button" class="button-slide" aria-label="Слайд #3">
+          <span class="visually-hidden">Слайд №3</span>
+        </button>
       </div>
     </section>
 
@@ -164,9 +170,9 @@
 
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#" aria-label="Вконтакте"></a></li>
-        <li><a class="social-button" href="#" aria-label="Фэйсбук"></a></li>
-        <li><a class="social-button" href="#" aria-label="Инстаграм"></a></li>
+        <li><a class="social-button" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a class="social-button" href="#" aria-label="Фэйсбук"><span class="visually-hidden">Фэйсбук</span></a></li>
+        <li><a class="social-button" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -185,7 +191,7 @@
     </div>
     <label for="letter">Текст письма:</label>
     <textarea rows="5" name="letter" id="letter" placeholder="В свободной форме"></textarea>
-    <button type="button" class="modal-close">Закрыть</button>
+    <button type="button" class="modal-close" aria-label="Закрыть"><span class="visually-hidden">Закрыть</span></button>
   </div>
 </body>
 </html>
