@@ -50,13 +50,13 @@
         </li>
       </ul>
       <div class="slider-switch-panel">
-        <button type="button" class="button-slide-active" aria-label="Слайд #1">
+        <button type="button" class="button-slide-active">
           <span class="visually-hidden">Слайд №1</span>
         </button>
-        <button type="button" class="button-slide" aria-label="Слайд #2">
+        <button type="button" class="button-slide">
           <span class="visually-hidden">Слайд №3</span>
         </button>
-        <button type="button" class="button-slide" aria-label="Слайд #3">
+        <button type="button" class="button-slide">
           <span class="visually-hidden">Слайд №3</span>
         </button>
       </div>
@@ -69,19 +69,19 @@
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button-order-site">Заказать</a>
+          <a class="button-order-site" aria-label="Заказать дизайн веб-сайта">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button-order-app">Заказать</a>
+          <a class="button-order-app" aria-label="Заказать дизайн веб-приложения">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button-order-presentation">Заказать</a>
+          <a class="button-order-presentation" aria-label="Заказать презентацию">Заказать</a>
         </li>
       </ul>
     </section>
@@ -170,9 +170,21 @@
 
     <div class="footer-social">
       <ul>
-        <li><a class="social-button" href="#" aria-label="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="social-button" href="#" aria-label="Фэйсбук"><span class="visually-hidden">Фэйсбук</span></a></li>
-        <li><a class="social-button" href="#" aria-label="Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+        <li>
+          <a class="social-button" href="#" aria-label="Вконтакте">
+            <img class="soc-icon" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Фэйсбук">
+            <img class="soc-icon" src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук">
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#" aria-label="Инстаграм">
+            <img class="soc-icon" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+          </a>
+        </li>
       </ul>
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -191,7 +203,7 @@
     </div>
     <label for="letter">Текст письма:</label>
     <textarea rows="5" name="letter" id="letter" placeholder="В свободной форме"></textarea>
-    <button type="button" class="modal-close" aria-label="Закрыть"><span class="visually-hidden">Закрыть</span></button>
+    <button type="button" class="modal-close" aria-label="Закрыть"></button>
   </div>
 </body>
 </html>
