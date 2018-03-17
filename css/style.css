@@ -41,6 +41,7 @@ a {
 }
 
 .main-navigation a {
+  display: block;
   color: #000000;
 }
 
@@ -247,9 +248,14 @@ a {
   list-style: none;
 }
 
+.partner-site a {
+  display: block;
+  opacity: 0.2
+}
+
 .partner-site a:focus,
 .partner-site a:hover {
-  opacity: 0.2;
+  opacity: 1;
 }
 
 .partner-site a:active {
@@ -261,6 +267,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .footer-social ul {
@@ -278,9 +285,18 @@ a {
   position: relative;
   width: 79px;
   height:79px;
-  background-color: #e74246;
+  background-color: #e1e1e1;
   border-radius: 50%;
   display: block;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  background-color: #e74246;
+}
+
+.footer-social a:active {
+  background-color: #d7373b;
 }
 
 .footer-social img {
@@ -321,9 +337,19 @@ a {
   border: 2px solid #000000;
 }
 
+input:hover::placeholder,
+textarea:hover::placeholder {
+  color: black;
+}
+
 .modal-feedback input:invalid,
 .modal-feedback textarea:invalid {
   border: 2px solid #e74246;
+  color: #e74246;
+}
+
+input:hover::invalid,
+textarea:hover::invalid {
   color: #e74246;
 }
 
@@ -338,6 +364,22 @@ a {
   display: block;
 }
 
+.modal-feedback .modal-close {
+  opacity: 0.3;
+}
+
+.modal-feedback .modal-close:hover,
+.modal-feedback .modal-close:focus {
+  opacity: 1;
+}
+
+.modal-feedback .modal-close:active {
+  opacity: 0.1;
+}
+
+
+/* catalog.html */
+
 .catalog-caption {
   background-color: #eeeeee;
 }
@@ -348,6 +390,7 @@ a {
   line-height: 55px;
   font-weight: 500;
   text-align: center;
+  color: #000000;
 }
 
 .sort-menu {
@@ -456,10 +499,16 @@ a {
 }
 
 .coast-info {
+  display: none;
   margin: 0;
   padding: 0;
   background-color: #eeeeee;
 }
+
+.product-cards-item:hover > .coast-info {
+  display: block;
+}
+
 .coast-info b {
   font-size: 18px;
   line-height: 30px;
