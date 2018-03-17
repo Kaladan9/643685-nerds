@@ -34,8 +34,8 @@
       <h2>Магазин готовых шаблонов</h2>
     </div>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <fieldset>
+    <form class="sort-menu" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="choice-field">
         <legend>Стоимость:</legend>
         <div>
           <label class="visually-hidden" for="cost">Цена</label>
@@ -51,7 +51,7 @@
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="choice-field">
         <legend>Сетка:</legend>
         <label for="adapt">
           <input type="radio" name="grid" id="adapt" value="adapt"  checked>
@@ -68,7 +68,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Особенности:</legend>
+        <legend class="choice-field">Особенности:</legend>
         <input type="checkbox" name="slider" id="slider" checked>
         <label for="slider">Слайдер</label>
         <input type="checkbox" name="adv-field" id="adv-field">
@@ -92,15 +92,17 @@
         <b>Сортировать:</b>
         <ul class="sort-list">
           <li><a class="button-sort-active" href="#">по цене</a></li>
-          <li><a class="button-sort" href="#">по типу</a></li>
-          <li><a class="button-sort" href="#">по названию</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по названию</a></li>
           <li>
-            <a type="button" class="button-sort-active" href="#">
+            <a class="button-sort-active" href="#">
+              <img  src="img/icon-down-dir.svg" width="11" height="10" alt="По убыванию">
               <span class="visually-hidden">По убыванию</span>
             </a>
           </li>
           <li>
-            <a type="button" class="button-sort" href="#">
+            <a href="#">
+              <img  src="img/icon-up-dir.svg" width="11" height="10" alt="По возрастанию">
               <span class="visually-hidden">По возрастанию</span>
             </a>
           </li>
@@ -114,7 +116,7 @@
             <div class="coast-info">
               <b>Sedona</b>
               <p>Информационный сайт для туристов</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
           <li class="product-cards-item">
@@ -122,7 +124,7 @@
             <div class="coast-info">
               <b>Pink app</b>
               <p>Продуктивный лендинг приложения для iOS и Android</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
           <li class="product-cards-item">
@@ -130,7 +132,7 @@
             <div class="coast-info">
               <b>Barbershop</b>
               <p>Сайт салоны красоты. Для мужчин, да.</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
           <li class="product-cards-item">
@@ -138,7 +140,7 @@
             <div class="coast-info">
               <b>Mishka</b>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
           <li class="product-cards-item">
@@ -146,7 +148,7 @@
             <div class="coast-info">
               <b>A plus</b>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
           <li class="product-cards-item">
@@ -154,17 +156,17 @@
             <div class="coast-info">
               <b>Кваст</b>
               <p>Промо-сайт производителя крафтавого кваса</p>
-              <a class="button-coast" href="#" aria-label="Заказать товар">9900 руб.</a>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
             </div>
           </li>
         </ul>
       </div>
 
       <div class="page-menu">
-        <a class="button-page-item" href="#" aria-label="Страница товаров 1">1</a>
+        <a class="button-page-item active-page" href="#" aria-label="Страница товаров 1">1</a>
         <a class="button-page-item" href="#" aria-label="Страница товаров 2">2</a>
         <a class="button-page-item" href="#" aria-label="Страница товаров 3">3</a>
-        <a class="button-page-item" href="#" aria-label="Следующая страница">Следующая</a>
+        <a class="show-button" href="#" aria-label="Следующая страница">Следующая</a>
       </div>
     </div>
   </main>
@@ -173,7 +175,7 @@
 
     <section class="adress">
       <h2 class="visually-hidden">Как добраться</h2>
-      <img class="map" src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Коншенная, д. 19/8">
+      <img class="map" src="img/map.jpg" width="1440" height="416" alt="Дизайн студия Nerds, 191186, Санкт-Петербург, ул. Б. Коншенная, д. 19/8">
 
       <div class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
@@ -185,7 +187,7 @@
         <p class="contact-number">
           +7 (812) 275-75-75
         </p>
-        <a class="writeus-button" href="writeus.html">Напишите нам</a>
+        <a class="button" href="writeus.html">Напишите нам</a>
       </div>
     </section>
 
@@ -211,6 +213,3 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-
-</body>
-</html>

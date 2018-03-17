@@ -23,6 +23,7 @@ a {
   margin: -1px;
 }
 
+
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
@@ -36,6 +37,7 @@ a {
 .site-navigation,
 .user-navigation {
   list-style: none;
+  margin: 0;
 }
 
 .main-navigation a {
@@ -66,6 +68,7 @@ a {
 
 .preview ul {
   list-style: none;
+  margin: 0;
 }
 
 .preview-item b {
@@ -73,6 +76,14 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000000;
+}
+
+.preview-item {
+  display: none;
+}
+
+.open {
+  display: block;
 }
 
 .button {
@@ -251,5 +262,243 @@ a {
   font-weight: 700;
   color: #000000;
 }
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social a {
+  position: relative;
+  width: 79px;
+  height:79px;
+  background-color: #e74246;
+  border-radius: 50%;
+  display: block;
+}
+
+.footer-social img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-feedback {
+    display: none;
+}
+
+.modal-feedback label {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.modal-feedback input,
+.modal-feedback textarea {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  border: 2px solid #d7dcde;
+}
+
+.modal-feedback input:hover,
+.modal-feedback textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-feedback input:focus,
+.modal-feedback textarea:focus {
+  color: black;
+  border: 2px solid #000000;
+}
+
+.modal-feedback input:invalid,
+.modal-feedback textarea:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}
+
+.modal-feedback h2{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal-open {
+  display: block;
+}
+
+.catalog-caption {
+  background-color: #eeeeee;
+}
+
+.catalog-caption h2 {
+  margin: 0;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.sort-menu {
+  font: inherit;
+}
+
+.sort-menu fieldset {
+  border-width: 0px;
+}
+
+.sort-menu legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort-field b {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.sort-field ul {
+  list-style: none;
+}
+
+.choice-field label {
+  color: #283136;
+}
+
+.choice-field label:hover,
+.choice-field label:focus {
+  color: #000000;
+}
+
+.choice-field label:disabled {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.show-button {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.show-button:hover,
+.show-button:focus {
+  background-color: #dfdfdf;
+}
+
+.show-button:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
+
+.sort-list a{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000000;
+
+  opacity: 0.3;
+}
+
+.sort-list a:hover,
+.sort-list a:focus {
+  opacity: 0.6;
+}
+
+.sort-list a:active,
+.button-sort-active {
+  opacity: 1;
+}
+
+.product-cards-field ul {
+  list-style: none;
+}
+
+.product-cards-item {
+  width: 360px;
+  margin: 0;
+  padding: 0;
+  background-color: #e9e9e9;
+}
+
+.product-cards-item:hover {
+  padding-bottom: 0px;
+  background-color: #4d4d4d;
+}
+
+.product-cards-item img {
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.coast-info {
+  margin: 0;
+  padding: 0;
+  background-color: #eeeeee;
+}
+.coast-info b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.coast-info p {
+  margin: 0;
+  color: #666666;
+}
+
+.button-page-item {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.button-page-item:hover,
+.button-page-item:focus {
+  background-color: #dfdfdf;
+}
+
+.button-page-item:active {
+  color: #959595;
+  background-color: #d5d5d5;
+}
+
+.button-page-item.active-page {
+  background-color: #ffffff;
+  box-shadow: inset 0 0 3px 0 #dbdbdb;
+}
+
+
 
 
