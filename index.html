@@ -10,7 +10,7 @@
 <body>
 
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation container">
       <a class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Nerds">
       </a>
@@ -26,127 +26,142 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
 
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
     <section class="preview">
-      <h2 class="visually-hidden">Превью студии</h2>
-      <ul class="preview-slider">
-        <li class="preview-item open">
-          <b>Долго, дорого, скрупулезно</b>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-          <a class="button" href="more-info.html">Узнать больше</a>
-          <img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
-        </li>
-        <li class="preview-item">
-          <b>Любим математику, как никто другой</b>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-          <a class="button" href="more-info.html">Узнать больше</a>
-          <img src="img/slide2.png" width="663" height="430" alt="Слайд 2">
-        </li>
-        <li class="preview-item">
-          <b>Только ночь, только хардкор</b>
-          <p>Работать днем, как все? Мы против этого, ближе к полуночи работа только начинается</p>
-          <a class="button" href="more-info.html">Узнать больше</a>
-          <img src="img/slide3.png" width="759" height="411" alt="Слайд 3">
-        </li>
-      </ul>
-      <div class="slider-switch-panel">
-        <button type="button" class="button-slide-active">
-          <span class="visually-hidden">Слайд №1</span>
-        </button>
-        <button type="button" class="button-slide">
-          <span class="visually-hidden">Слайд №3</span>
-        </button>
-        <button type="button" class="button-slide">
-          <span class="visually-hidden">Слайд №3</span>
-        </button>
+      <div class="container">
+        <h2 class="visually-hidden">Превью студии</h2>
+        <ul class="preview-slider">
+          <li class="preview-item">
+            <div>
+              <b>Долго, дорого, скрупулезно</b>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+              <a class="button" href="more-info.html">Узнать больше</a>
+            </div>
+            <img src="img/slide1.png" width="698" height="413" alt="Слайд 1">
+          </li>
+          <li class="preview-item open">
+            <div>
+              <b>Любим математику, как никто другой</b>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+              <a class="button" href="more-info.html">Узнать больше</a>
+            </div>
+            <img src="img/slide2.png" width="663" height="430" alt="Слайд 2">
+          </li>
+          <li class="preview-item">
+            <div>
+              <b>Только ночь, только хардкор</b>
+              <p>Работать днем, как все? Мы против этого, ближе к полуночи работа только начинается</p>
+              <a class="button" href="more-info.html">Узнать больше</a>
+            </div>
+            <img src="img/slide3.png" width="759" height="411" alt="Слайд 3">
+          </li>
+        </ul>
+
+        <div class="slider-switch-panel">
+          <button type="button" class="button-slide-active">
+            <span class="visually-hidden">Слайд №1</span>
+          </button>
+          <button type="button" class="button-slide">
+            <span class="visually-hidden">Слайд №3</span>
+          </button>
+          <button type="button" class="button-slide">
+            <span class="visually-hidden">Слайд №3</span>
+          </button>
+        </div>
       </div>
     </section>
 
     <section class="services">
-      <h2 class="visually-hidden">Услуги студии</h2>
-      <ul class="services-list">
-        <li class="services-item">
-          <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
-          <h3>Веб-сайты</h3>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button-order-site" href="#" aria-label="Заказать дизайн веб-сайта">Заказать</a>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
-          <h3>Приложения</h3>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="button-order-app" href="#" aria-label="Заказать дизайн веб-приложения">Заказать</a>
-        </li>
-        <li class="services-item">
-          <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
-          <h3>Презентации</h3>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="button-order-presentation" href="#" aria-label="Заказать презентацию">Заказать</a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Услуги студии</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button-order-site" href="#" aria-label="Заказать дизайн веб-сайта">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-2.png" width="300" height="146" alt="Приложения">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button-order-app" href="#" aria-label="Заказать дизайн веб-приложения">Заказать</a>
+          </li>
+          <li class="services-item">
+            <img src="img/illustration-3.png" width="300" height="146" alt="Презентации">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button-order-presentation" href="#" aria-label="Заказать презентацию">Заказать</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="main-info">
-      <h2 class="visually-hidden">Информация о студии</h2>
+      <div class="main-info-box container">
+        <h2 class="visually-hidden">Информация о студии</h2>
 
-      <div class="about-info">
-        <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h3>Выполняем заказы на разработку:</h3>
-        <ul class="orders-list">
-          <li class="orders-item">Веб-сайтов любой сложности</li>
-          <li class="orders-item">Мобильных приложений для OS и Android</li>
-          <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </div>
+        <div class="about-info">
+          <b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3>Выполняем заказы на разработку:</h3>
+          <ul class="orders-list">
+            <li class="orders-item">Веб-сайтов любой сложности</li>
+            <li class="orders-item">Мобильных приложений для OS и Android</li>
+            <li class="orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
 
-      <div class="result-info">
-        <img src="img/nerds-illustration.png" width="360" heigth="208" alt="Полный логотип студии Nerds">
-        <b>С 2004 года любим точность во всем:</b>
-        <ul class="infographic">
-          <li class="infographic-item">
-            <span class="infographic-percent">146<sup>%</sup></span>
-            <p>Уровень самоотдачи</p>
-          </li>
-          <li class="infographic-item">
-            <span class="infographic-percent">100<sup>%</sup></span>
-            <p>Соблюдение сроков</p>
-          </li>
-          <li class="infographic-item">
-            <span class="infographic-percent">50<sup>%</sup></span>
-            <p>Минимальная предоплата</p>
-          </li>
-        </ul>
+        <div class="result-info">
+          <img src="img/nerds-illustration.png" width="360" heigth="208" alt="Полный логотип студии Nerds">
+          <b>С 2004 года любим точность во всем:</b>
+          <ul class="infographic">
+            <li class="infographic-item">
+              <span class="infographic-percent">146<sup>%</sup></span>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li class="infographic-item">
+              <span class="infographic-percent">100<sup>%</sup></span>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li class="infographic-item">
+              <span class="infographic-percent">50<sup>%</sup></span>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="partner-site">
-      <h2 class="visually-hidden">Сайты-партнеры</h2>
-      <ul class="partner-list">
-        <li class="partner-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/academylogo.png" width="199" height="68" alt="Ссылка на Html Academy">
-          </a>
-        </li>
-        <li class="partner-item">
-          <a href="https://borodinski.ru">
-            <img src="img/borodinskilogo.png" width="209" height="90" alt="Ссылка на Барбершоп Borodinski">
-          </a>
-        </li>
-        <li class="partner-item">
-          <a href="https://pink.ru">
-            <img src="img/pinklogo.png" width="185" height="52" alt="Ссылка на Pink">
-          </a>
-        </li>
-        <li class="partner-item">
-          <a href="https://mishka.ru">
-            <img src="img/mishkalogo.png" width="173" height="84" alt="Ссылка на Mishka">
-          </a>
-        </li>
-      </ul>
+      <div class="container">
+        <h2 class="visually-hidden">Сайты-партнеры</h2>
+        <ul class="partner-list">
+          <li class="partner-item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/academylogo.png" width="199" height="68" alt="Ссылка на Html Academy">
+            </a>
+          </li>
+          <li class="partner-item">
+            <a href="https://borodinski.ru">
+              <img src="img/borodinskilogo.png" width="209" height="90" alt="Ссылка на Барбершоп Borodinski">
+            </a>
+          </li>
+          <li class="partner-item">
+            <a href="https://pink.ru">
+              <img src="img/pinklogo.png" width="185" height="52" alt="Ссылка на Pink">
+            </a>
+          </li>
+          <li class="partner-item">
+            <a href="https://mishka.ru">
+              <img src="img/mishkalogo.png" width="173" height="84" alt="Ссылка на Mishka">
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
@@ -171,26 +186,33 @@
       </div>
     </section>
 
+
     <div class="footer-social">
-      <ul>
-        <li>
-          <a class="social-button" href="#" aria-label="Вконтакте">
-            <img class="soc-icon" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#" aria-label="Фэйсбук">
-            <img class="soc-icon" src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук">
-          </a>
-        </li>
-        <li>
-          <a class="social-button" href="#" aria-label="Инстаграм">
-            <img class="soc-icon" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
-          </a>
-        </li>
-      </ul>
-      <b>Давайте дружить, это выгодно!</b>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-social-box container">
+        <div>
+          <ul>
+            <li>
+              <a class="social-button" href="#" aria-label="Вконтакте">
+                <img class="soc-icon" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Фэйсбук">
+                <img class="soc-icon" src="img/fb-icon.svg" width="12" height="22" alt="Фэйсбук">
+              </a>
+            </li>
+            <li>
+              <a class="social-button" href="#" aria-label="Инстаграм">
+                <img class="soc-icon" src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
     </div>
   </footer>
 
