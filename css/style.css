@@ -166,7 +166,6 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 
-
   background-color: #00ca74;
   border: none;
 }
@@ -337,8 +336,8 @@ a {
   border: 2px solid #000000;
 }
 
-input:hover::placeholder,
-textarea:hover::placeholder {
+.modal-feedback input:hover::placeholder,
+.modal-feedback textarea:hover::placeholder {
   color: black;
 }
 
@@ -348,8 +347,8 @@ textarea:hover::placeholder {
   color: #e74246;
 }
 
-input:hover::invalid,
-textarea:hover::invalid {
+.modal-feedback input:hover::invalid,
+.modal-feedback textarea:hover::invalid {
   color: #e74246;
 }
 
@@ -366,6 +365,8 @@ textarea:hover::invalid {
 
 .modal-feedback .modal-close {
   opacity: 0.3;
+  background: none;
+  border: none;
 }
 
 .modal-feedback .modal-close:hover,
@@ -493,9 +494,9 @@ textarea:hover::invalid {
 }
 
 .product-cards-item img {
-  margin-top: 40px;
+  display: block;
+  padding-top: 40px;
   margin-bottom: 0px;
-  padding: 0px;
 }
 
 .coast-info {
