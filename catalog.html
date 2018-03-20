@@ -34,143 +34,143 @@
       <h2>Магазин готовых шаблонов</h2>
     </div>
 
-    <div>
-      <div class="catalog-box container">
-        <form class="sort-menu" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="choice-field">
-            <legend>Стоимость:</legend>
-            <div>
-              <label class="visually-hidden" for="cost">Цена</label>
-              <input type="range" name="cost" id="cost" min="0" max="15000" step="100" value="10000">
-            </div>
-            <div>
-              <label for="min">от</label>
-              <output name="min" id="min">0</output>
-            </div>
-            <div>
-              <label for="max">до</label>
-              <output name="max" id="max">15000</output>
-            </div>
-          </fieldset>
 
-          <fieldset class="choice-field">
-            <legend>Сетка:</legend>
-            <label for="adapt">
-              <input type="radio" name="grid" id="adapt" value="adapt"  checked>
-              Адаптивная
-            </label>
-            <label for="fix">
-              <input type="radio" name="grid" id="fix" value="fix">
-              Фиксированная
-            </label>
-            <label for="rub">
-              <input type="radio" name="grid" id="rub" value="rub">
-              Резиновая
-            </label>
-          </fieldset>
-
-          <fieldset class="choice-field">
-            <legend>Особенности:</legend>
-            <input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label>
-            <input type="checkbox" name="adv-field" id="adv-field">
-            <label for="adv-field">Блок преимуществ</label>
-            <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label>
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
-            <input type="checkbox" name="bask" id="bask">
-            <label for="bask">Корзина</label>
-          </fieldset>
-
-          <button type="submit" class="show-button">Показать</button>
-        </form>
-
-
-
-        <div class="catalog-products-field">
-
-          <div class="sort-field">
-            <b>Сортировать:</b>
-            <ul class="sort-list">
-              <li><a class="button-sort-active" href="#">по цене</a></li>
-              <li><a href="#">по типу</a></li>
-              <li><a href="#">по названию</a></li>
-              <li>
-                <a class="button-sort-active" href="#">
-                  <span class="visually-hidden">По убыванию</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span class="visually-hidden">По возрастанию</span>
-                </a>
-              </li>
-            </ul>
+    <div class="catalog-box container">
+      <form class="sort-menu" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="choice-field">
+          <legend>Стоимость:</legend>
+          <div>
+            <label class="visually-hidden" for="cost">Цена</label>
+            <input type="range" name="cost" id="cost" min="0" max="15000" step="100" value="10000">
           </div>
-
-          <div class="product-cards-field">
-            <ul class="product-cards-list">
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-sedona.jpg" width="360" height="576" alt="Промо сайта Sedona">
-                <div class="coast-info">
-                  <b>Sedona</b>
-                  <p>Информационный сайт для туристов</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-pink.jpg" width="360" height="576" alt="Промо сайта Pink">
-                <div class="coast-info">
-                  <b>Pink app</b>
-                  <p>Продуктивный лендинг приложения для iOS и Android</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Промо сайта Borodinski">
-                <div class="coast-info">
-                  <b>Barbershop</b>
-                  <p>Сайт салоны красоты. Для мужчин, да.</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-mishka.jpg" width="360" height="576" alt="Промо сайта Mishka">
-                <div class="coast-info">
-                  <b>Mishka</b>
-                  <p>Интернет-магазин вязаных игрушек</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-aplus.jpg" width="360" height="576" alt="промо сайта A-plus">
-                <div class="coast-info">
-                  <b>A plus</b>
-                  <p>Лендинг курсов повышения квалификации</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-              <li class="product-cards-item">
-                <img class="card-img" src="img/img-kvast.jpg" width="360" height="576" alt="Промо сайта Kvast">
-                <div class="coast-info">
-                  <b>Кваст</b>
-                  <p>Промо-сайт производителя крафтавого кваса</p>
-                  <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
-                </div>
-              </li>
-            </ul>
+          <div>
+            <label for="min">от</label>
+            <output name="min" id="min">0</output>
           </div>
-
-          <div class="page-menu">
-            <a class="button-page-item active-page" href="#" aria-label="Страница товаров 1">1</a>
-            <a class="button-page-item" href="#" aria-label="Страница товаров 2">2</a>
-            <a class="button-page-item" href="#" aria-label="Страница товаров 3">3</a>
-            <a class="show-button" href="#" aria-label="Следующая страница">Следующая</a>
+          <div>
+            <label for="max">до</label>
+            <output name="max" id="max">15000</output>
           </div>
+        </fieldset>
+
+        <fieldset class="choice-field">
+          <legend>Сетка:</legend>
+          <label for="adapt">
+            <input type="radio" name="grid" id="adapt" value="adapt"  checked>
+            Адаптивная
+          </label>
+          <label for="fix">
+            <input type="radio" name="grid" id="fix" value="fix">
+            Фиксированная
+          </label>
+          <label for="rub">
+            <input type="radio" name="grid" id="rub" value="rub">
+            Резиновая
+          </label>
+        </fieldset>
+
+        <fieldset class="choice-field">
+          <legend>Особенности:</legend>
+          <input type="checkbox" name="slider" id="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input type="checkbox" name="adv-field" id="adv-field">
+          <label for="adv-field">Блок преимуществ</label>
+          <input type="checkbox" name="news" id="news" checked>
+          <label for="news">Новости</label>
+          <input type="checkbox" name="gallery" id="gallery">
+          <label for="gallery">Галерея</label>
+          <input type="checkbox" name="bask" id="bask">
+          <label for="bask">Корзина</label>
+        </fieldset>
+
+        <button type="submit" class="show-button">Показать</button>
+      </form>
+
+
+
+      <div class="catalog-products-field">
+
+        <div class="sort-field">
+          <b>Сортировать:</b>
+          <ul class="sort-list">
+            <li><a class="button-sort-active" href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по названию</a></li>
+            <li>
+              <a class="button-sort-active" href="#">
+                <span class="visually-hidden">По убыванию</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="visually-hidden">По возрастанию</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <ul class="product-cards-list">
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-sedona.jpg" width="360" height="576" alt="Промо сайта Sedona">
+            <div class="coast-info">
+              <b>Sedona</b>
+              <p>Информационный сайт для туристов</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-pink.jpg" width="360" height="576" alt="Промо сайта Pink">
+            <div class="coast-info">
+              <b>Pink app</b>
+              <p>Продуктивный лендинг приложения для iOS и Android</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Промо сайта Borodinski">
+            <div class="coast-info">
+              <b>Barbershop</b>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-mishka.jpg" width="360" height="576" alt="Промо сайта Mishka">
+            <div class="coast-info">
+              <b>Mishka</b>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-aplus.jpg" width="360" height="576" alt="промо сайта A-plus">
+            <div class="coast-info">
+              <b>A plus</b>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+          <li class="product-cards-item">
+            <img class="card-img" src="img/img-kvast.jpg" width="360" height="576" alt="Промо сайта Kvast">
+            <div class="coast-info">
+              <b>Кваст</b>
+              <p>Промо-сайт производителя крафтавого кваса</p>
+              <a class="button" href="#" aria-label="Заказать товар">9900 руб.</a>
+            </div>
+          </li>
+        </ul>
+
+
+        <div class="page-menu">
+          <a class="button-page-item active-page" href="#" aria-label="Страница товаров 1">1</a>
+          <a class="button-page-item" href="#" aria-label="Страница товаров 2">2</a>
+          <a class="button-page-item" href="#" aria-label="Страница товаров 3">3</a>
+          <a class="show-button" href="#" aria-label="Следующая страница">Следующая</a>
         </div>
       </div>
     </div>
+
   </main>
 
   <footer class="main-footer">

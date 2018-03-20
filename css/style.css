@@ -87,6 +87,7 @@ a {
 
 .preview {
   background-color: #eeeeee;
+  margin-bottom: 80px;
 }
 
 .preview-slider {
@@ -143,12 +144,11 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
   margin-bottom: 80px;
 }
 
 .services-item {
-  max-width:400px;
+/*  max-width:400px; */
 }
 
 .services-item h3{
@@ -545,13 +545,11 @@ a {
   opacity: 1;
 }
 
-.product-cards-field{
-  align-self: flex-end;
-}
 
-.product-cards-field ul {
+.product-cards-list {
   width: 760px;
   padding: 0;
+  align-self: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
