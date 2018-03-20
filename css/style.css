@@ -456,7 +456,10 @@ a {
 }
 
 .catalog-box {
-  padding-top: 60px;
+    padding-top: 60px;
+}
+
+.catalog-box-wrapper {
   display: flex;
 }
 
