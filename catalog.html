@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <title>Дизайн-студия "Нёрдс"</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
@@ -147,7 +148,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-sedona.jpg" width="360" height="576" alt="Промо сайта Sedona">
               <div class="coast-info">
-                <b>Sedona</b>
+                <a class="product-link" href="product-card.html">Sedona</a>
                 <p class="coast-info-paragraph">Информационный сайт для туристов</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -155,7 +156,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-pink.jpg" width="360" height="576" alt="Промо сайта Pink">
               <div class="coast-info">
-                <b>Pink app</b>
+                <a class="product-link" href="product-card.html">Pink app</a>
                 <p class="coast-info-paragraph pink-paragraph">Продуктивный лендинг приложения для iOS и Android</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -163,7 +164,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-barbershop.jpg" width="360" height="576" alt="Промо сайта Borodinski">
               <div class="coast-info coast-info-minheight">
-                <b>Barbershop</b>
+                <a class="product-link" href="product-card.html">Barbershop</a>
                 <p class="coast-info-paragraph">Сайт салоны красоты. Для мужчин, да.</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -171,7 +172,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-mishka.jpg" width="360" height="576" alt="Промо сайта Mishka">
               <div class="coast-info coast-info-minheight">
-                <b>Mishka</b>
+                <a class="product-link" href="product-card.html">Mishka</a>
                 <p class="coast-info-paragraph">Интернет-магазин вязаных игрушек</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -179,7 +180,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-aplus.jpg" width="360" height="576" alt="промо сайта A-plus">
               <div class="coast-info coast-info-morepadding">
-                <b>A plus</b>
+                <a class="product-link" href="product-card.html">A plus</a>
                 <p class="coast-info-paragraph aplus-paragraph">Лендинг курсов повышения квалификации</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -187,7 +188,7 @@
             <li class="product-cards-item" tabindex="0">
               <img class="card-img" src="img/img-kvast.jpg" width="360" height="576" alt="Промо сайта Kvast">
               <div class="coast-info coast-info-morepadding">
-                <b>Кваст</b>
+                <a class="product-link" href="product-card.html">Кваст</a>
                 <p class="coast-info-paragraph kvast-paragraph">Промо-сайт производителя крафтавого кваса</p>
                 <a class="button button-coast-info" href="#" aria-label="Заказать товар">9900 руб.</a>
               </div>
@@ -219,13 +220,13 @@
           <h2 class="visually-hidden">Обратная связь</h2>
           <h3>Nerds design studio</h3>
           <p class="contacts">
-            191186, Санкт-Петербург,<br>
+            191186, Санкт-Петербург,
             ул. Б. Конюшенная, д. 19/8
           </p>
           <p class="contact-number">
             тел. +7 (812) 275-75-75
           </p>
-          <a class="button button-writeus" href="#">Напишите нам</a>
+          <a class="button button-writeus" href="writeus.html">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -259,6 +260,30 @@
       </div>
     </div>
   </footer>
+  <script src="js/focus.min.js"></script>
+
+  <div class="modal-feedback">
+    <h2>Напишите нам</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="half-width">
+        <label for="name">Ваше имя:</label>
+        <input class="name-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="half-width">
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+      </p>
+      <div class="textarea-box">
+        <label for="letter">Текст письма:</label>
+        <textarea rows="5" name="letter" id="letter" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button button-send" type="submit">Отправить</button>
+    </form>
+    <button type="button" class="modal-close" aria-label="Закрыть">
+      <img class="close-cross" src="img/close-cross.svg" width="21" height="21" alt="закрыть окно обратной связи">
+    </button>
+  </div>
+  <script src="js/modal.min.js"></script>
   <script src="js/focus.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -463,8 +464,10 @@ input[type="radio"].visually-hidden {
 }
 
 .about-info h3 {
+  font-size: 16px;
   margin: 0;
   margin-top: 36px;
+  text-transform: uppercase;
 }
 
 .orders-list {
@@ -692,6 +695,10 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+}
+
+.feedback p {
+  padding-right: 10px;
 }
 
 .contacts {
@@ -1397,6 +1404,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 33px;
   padding: 0;
   background-color: #e9e9e9;
+  border-radius: 2px;
 }
 
 .product-cards-item::before {
@@ -1480,7 +1488,7 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
-.coast-info b {
+.product-link {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1488,6 +1496,15 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   margin-bottom: auto;
+}
+
+.product-link:focus,
+.product-link:hover {
+  color: #fb565a;
+}
+
+.product-link:active {
+  color: #a6a6a6;
 }
 
 .coast-info p {
