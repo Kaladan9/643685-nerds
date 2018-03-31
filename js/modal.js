@@ -8,6 +8,8 @@ var letter = form.querySelector('[name=letter]');
 
 link.addEventListener('click', function (evt) {
   evt.preventDefault();
+  document.body.style.overflow = 'hidden';
+  console.log('click');
   popup.classList.add('modal-feedback-show');
   console.log(username);
   username.focus();
@@ -15,6 +17,7 @@ link.addEventListener('click', function (evt) {
 
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
+  document.body.style.overflow = '';
   popup.classList.remove('modal-feedback-show');
 });
 
@@ -24,3 +27,4 @@ form.addEventListener('submit', function (evt) {
     console.log('нужно ввести имя, e-mail и текст сообщения');
   }
 });
+

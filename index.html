@@ -5,7 +5,7 @@
   <title>Дизайн-студия "Нёрдс"</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -26,7 +26,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="main-content">
 
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
 
@@ -34,7 +34,7 @@
       <div class="container">
         <h2 class="visually-hidden">Превью студии</h2>
         <ul  class="preview-slider">
-          <li class="preview-item preview-item-first">
+          <li class="preview-item preview-item-first preview-item-open">
             <div>
               <b>Долго, дорого, скрупулезно.</b>
               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
@@ -48,7 +48,7 @@
               <a class="button button-preview" href="more-info.html">Узнать больше</a>
             </div>
           </li>
-          <li class="preview-item preview-item-third preview-item-open">
+          <li class="preview-item preview-item-third">
             <div>
               <b>Только ночь, только хардкор</b>
               <p>Работать днем, как все? Мы против этого, ближе к полуночи работа только начинается</p>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="result-info">
-          <img src="img/nerds-illustration.png" width="360" heigth="208" alt="Полный логотип студии Nerds">
+          <img src="img/nerds-illustration.png" width="360" height="208" alt="Полный логотип студии Nerds">
           <b>С 2004 года любим точность во всем:</b>
           <ul class="infographic">
             <li class="infographic-item">
@@ -161,9 +161,12 @@
 
   <footer class="main-footer">
 
-    <section class="adress">
+    <section class="our-location">
       <h2 class="visually-hidden">Как добраться</h2>
       <img class="map" src="img/map.jpg" width="1440" height="416" alt="Дизайн студия Nerds, 191186, Санкт-Петербург, ул. Б. Коншенная, д. 19/8">
+    </section>
+
+    <section class="our-contacts">
       <div class="container">
         <div class="feedback">
           <h2 class="visually-hidden">Обратная связь</h2>

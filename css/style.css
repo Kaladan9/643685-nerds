@@ -152,6 +152,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.main-content {  /*для IE*/
+  display: block;
+  overflow-x: hidden;
+}
+
 .preview {
   position: relative;
 
@@ -605,24 +610,23 @@ input[type="radio"].visually-hidden {
   padding-left: 2px;
 }
 
-.partner-item:first-child {
+.partner-item {
   position: relative;
 }
 
-.partner-item:first-child::after {
+.partner-item:not(:last-child)::after {
   content: "";
 
   position: absolute;
   right: -52px;
-  top: 13px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-  -webkit-box-shadow: 300px 0 0 0 #eeeeee,
-  600px 0 0 0 #eeeeee;
-          box-shadow: 300px 0 0 0 #eeeeee,
-  600px 0 0 0 #eeeeee;
 }
 
 .partner-item .borodinskilogo {
@@ -639,24 +643,28 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
+  min-height: 416px;
+  width: 1440px;
   display: block;
   margin: 0 auto;
 }
 
-.adress {
+.our-location {
+  z-index: -10;
   position: relative;
-  margin-bottom: 70px;
 }
 
-.adress::after {
+.our-location::after {
   content: url(../img/map-marker.png);
   position: absolute;
-  top: 89px;
-  left: 932px;
+  top: 21%;
+  left: 56%;
 }
 
-.adress .container {
-  min-height: 416px;
+
+.our-contacts {
+  z-index: 10;
+  height: 416px;
   margin-top: -416px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,6 +672,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 70px;
 }
 
 .feedback {
@@ -937,6 +946,7 @@ input[type="radio"].visually-hidden {
 /* catalog.html */
 
 .catalog-container {
+  display: block;
   margin-bottom: 60px;
 }
 
@@ -1330,6 +1340,10 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.sort-list li {
+  min-width: 1px;
+}
+
 .sort-list li:nth-child(3) {
   margin-right: 35px;
 }
@@ -1409,7 +1423,7 @@ input[type="radio"].visually-hidden {
 }
 
 .coast-info {
-  min-height: 230px;
+  height: 230px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1435,7 +1449,7 @@ input[type="radio"].visually-hidden {
 }
 
 .coast-info.coast-info-minheight {
-  min-height: 228px;
+  height: 228px;
   padding: 26px 0;
   padding-bottom: 40px;
 }
@@ -1469,7 +1483,8 @@ input[type="radio"].visually-hidden {
 }
 
 .coast-info p {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   max-width: 100%;
 
   line-height: 18px;
