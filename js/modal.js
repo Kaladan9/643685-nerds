@@ -17,11 +17,15 @@ link.addEventListener('click', function (evt) {
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
   popup.classList.remove('modal-feedback-show');
+  popup.classList.remove('modal-feedback-error');
 });
 
 form.addEventListener('submit', function (evt) {
   if (!username.value || !email.value || !letter.value) {
     evt.preventDefault();
+    popup.classList.remove('modal-feedback-error');
+    popup.offsetWidth = popup.offsetWidth;
+    popup.classList.add('modal-feedback-error');
     console.log('нужно ввести имя, e-mail и текст сообщения');
   }
 });

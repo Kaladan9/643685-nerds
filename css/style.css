@@ -645,40 +645,46 @@ input[type="radio"].visually-hidden {
   padding-right: 14px;
 }
 
+.our-location {
+  margin-bottom: 62px;
+}
+
 .map {
+  position: relative;
   min-height: 416px;
   width: 1440px;
-  display: block;
   margin: 0 auto;
 }
 
-.our-location {
-  z-index: -10;
+.map iframe {
   position: relative;
+  z-index: 2;
+
+  border: none;
 }
 
-.our-location::after {
+.standard-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+.map::after {
   content: url(../img/map-marker.png);
   position: absolute;
+  z-index: 1;
   top: 21%;
-  left: 56%;
-}
-
-
-.our-contacts {
-  z-index: 10;
-  height: 416px;
-  margin-top: -416px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 70px;
+  left: 57%;
 }
 
 .feedback {
+  z-index: 3;
+  top: 54px;
+  left: 140px;
+  position: absolute;
   width: 320px;
   min-height: 308px;
   background-color: #fff;
@@ -787,6 +793,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-feedback {
+  z-index: 4;
   display: none;
   position: fixed;
   top: 140px;
@@ -805,8 +812,45 @@ input[type="radio"].visually-hidden {
           box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 }
 
+@-webkit-keyframes bounce {
+0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+70% { -webkit-transform: translateY(30px); transform: translateY(30px); }
+90% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+@keyframes bounce {
+0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
+70% { -webkit-transform: translateY(30px); transform: translateY(30px); }
+90% { -webkit-transform: translateY(-10px); transform: translateY(-10px); }
+100% { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
 .modal-feedback-show {
   display: block;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes shake {
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
+@keyframes shake {
+0%, 100% { -webkit-transform: translateX(0); transform: translateX(0); }
+10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); transform: translateX(10px); }
+}
+
+.modal-feedback-error {
+-webkit-animation-name: shake;
+        animation-name: shake;
+-webkit-animation-duration: 0.6s;
+        animation-duration: 0.6s;
 }
 
 .modal-feedback h2{
